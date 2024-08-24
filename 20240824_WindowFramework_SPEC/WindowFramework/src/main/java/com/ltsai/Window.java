@@ -1,17 +1,13 @@
 package com.ltsai;
 
-public class Window {
+public abstract class Window {
     WindowImpl impl;
 
     public Window(WindowImpl impl) {
         this.impl = impl;
     }
 
-    public void drawRect() {
-        impl.drawRect();
-    }
+    public abstract void drawRect();
 
-    public void drawText() {
-        impl.drawText();
-    }
+    public abstract void drawText();
 }
